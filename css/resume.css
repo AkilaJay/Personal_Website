@@ -1,0 +1,27 @@
+.projects-title{
+  text-align: center;
+}
+
+.projects-title-text{
+  font-size: 50px;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.text-projects{
+  text-align: center;
+}
+
+.center-button{
+  margin: 0 auto !important;
+}
+
+.resume{
+	background-color: #ccccb3;
+}
+
+.padding-resume{
+	padding-left: 10% !important;
+	padding-right: 10% !important;
+}
