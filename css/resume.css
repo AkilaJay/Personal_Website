@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .projects-title-text{
   font-size: 50px;
   color:white;
@@ -24,4 +25,11 @@
 .padding-resume{
 	padding-left: 10% !important;
 	padding-right: 10% !important;
+}
+
+.padding-panel{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }

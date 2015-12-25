@@ -1,0 +1,55 @@
+<div ng-controller="contact">
+<div class="contact">
+	<div class="jumbotron padding-jumbo">
+  <h1 class="text-projects">RESUME</h1>
+  <p class="text-projects">This is the text that will go in the explore section.</p>
+  <div class="row padding-jumbo">
+  	<div class="col-md-3">
+  		
+  	</div>
+  	<div class="col-md-3">
+  		<p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Projects</a></p>
+  	</div>
+    <div class="col-md-3">
+      <p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Full Resume</a></p>
+    </div>
+  	<div class="col-md-3">
+  		
+  	</div>
+  </div>
+</div>
+<div class="row padding-jumbo">
+<div class="col-xs-1 col-md-2"></div>
+<div class="col-xs-10 col-md-8">
+
+<form role="form" novalidate class="simple-form">
+  <div class="form-group">
+  <label class="control-label" for="inputDefault">Name</label>
+  <input type="text" class="form-control" id="inputDefault" ng-model="user.name" required >
+</div>
+
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess">Email</label>
+  <input type="text" class="form-control" id="inputSuccess" ng-model="user.email" required >
+</div>
+
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning">Subject</label>
+  <input type="text" class="form-control" id="inputWarning" required>
+</div>
+    <div class="form-group">
+  <label class="control-label" for="focusedInput">Message</label>
+  <input class="form-control" id="focusedInput" type="text" value="Enter your message here :)" ng-model="user.message" required >
+</div>
+
+<div class="form-group">
+      <div class="pull-center center-block">
+        <a type="submit" class="btn btn-primary btn-lg">Send Email</a>
+      </div>
+    </div>
+
+</form>
+</div>
+<div class="col-xs-1 col-md-2"></div>
+</div>
+</div>

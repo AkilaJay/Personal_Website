@@ -35,18 +35,16 @@ angular
     });
 }])
 
-.controller('about', [function($scope) {
+.controller('contact', [function($scope) {
     angular.element(document).ready(function () {
    		
-  //  		var controller = new ScrollMagic.Controller();
-  //  			// build scene
-		// var scene = new ScrollMagic.Scene({
-		// 					triggerElement: "#trigger1"
-		// 				})
-		// 				.setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2}) // trigger a TweenMax.to tween
-		// 				.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-		// 				.addTo(controller);
+    });
+}])
 
+.controller('about', [function($scope) {
+    angular.element(document).ready(function () {
+      
+  
     });
 }])
 
