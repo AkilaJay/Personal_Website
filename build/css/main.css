@@ -8,16 +8,6 @@
 
 }
 
-.circular {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    margin: 0 auto;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://www.arlnews.com/uploads/3/8/1/0/38109169/5121906_orig.jpg) no-repeat;
-    }
-
 .circular img {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -118,7 +108,7 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
    
     width: 180px;
     height: 180px;
-    background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/6083/profile/profile-512_1.jpg) no-repeat;
+    background: url(../img/circle.png) no-repeat;
     background-size: 180px 180px;
     margin: auto; 
     top: 0; left: 0; bottom: 0; right: 0;
@@ -388,6 +378,24 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
 .pull-center{
   margin:0 auto;
   text-align: center;
+}
+
+.padding-contact{
+	padding-bottom: 2%;
+}
+.footer{
+	padding-top: 2%;
+	padding-bottom: 6%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: #303030;
+
+}
+
+.footerText{
+	color: white;
+	font-size: 16px;
+	text-align: right;
 }
 	.headImage{
 	 background: url(../img/headshot.jpg) no-repeat right fixed!important; 
@@ -690,9 +698,33 @@ html { height: 100%;}
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
+/*#wrapper.toggled {
     padding-left: 220px;
+}*/
+
+#page-hamburger{
+   -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+
+.nav-logo{
+  padding-top: 10px;
+  padding-bottom:10px;
+  margin: 0 auto;
+  padding-left: 55px;
+}
+
+#page-hamburger.toggled{
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-left: 225px !important;
+
+}
+
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -1106,7 +1138,16 @@ transform: rotate(-45deg);  /* Newer browsers (incl IE9) */
 }
 
 .projects{
-  background-color: #CCA499;
+  background-color: #F5EDBA;
+}
+
+.projects-pad{
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+.paddingCus{
+  padding-top: 15%;
 }
 
 .report-module {
@@ -1128,7 +1169,7 @@ transform: rotate(-45deg);  /* Newer browsers (incl IE9) */
   transition: all 0.3s linear 0s;
 }
 .report-module .thumbnail {
-  background: #009775;
+  background: #DCDDDE;
   height: 500px;
   overflow: hidden;
 }
@@ -1268,6 +1309,17 @@ transform: rotate(-45deg);  /* Newer browsers (incl IE9) */
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+
+.paddingLeftRight{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.resume-padding{
+      padding-top: 5% !important;
+  padding-bottom: 5% !important
+}
+
 /*
 
 Full Tutorial: http://scotch.io/tutorials/building-

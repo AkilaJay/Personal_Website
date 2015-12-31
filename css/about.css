@@ -8,16 +8,6 @@
 
 }
 
-.circular {
-    width: 200px;
-    height: 200px;
-    border-radius: 150px;
-    margin: 0 auto;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://www.arlnews.com/uploads/3/8/1/0/38109169/5121906_orig.jpg) no-repeat;
-    }
-
 .circular img {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -118,7 +108,7 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
    
     width: 180px;
     height: 180px;
-    background: url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/6083/profile/profile-512_1.jpg) no-repeat;
+    background: url(../img/circle.png) no-repeat;
     background-size: 180px 180px;
     margin: auto; 
     top: 0; left: 0; bottom: 0; right: 0;

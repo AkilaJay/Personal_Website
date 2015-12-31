@@ -1,55 +1,80 @@
 <div ng-controller="contact">
 <div class="contact">
 	<div class="jumbotron padding-jumbo">
-  <h1 class="text-projects">RESUME</h1>
-  <p class="text-projects">This is the text that will go in the explore section.</p>
-  <div class="row padding-jumbo">
-  	<div class="col-md-3">
-  		
-  	</div>
-  	<div class="col-md-3">
-  		<p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Projects</a></p>
-  	</div>
-    <div class="col-md-3">
-      <p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Full Resume</a></p>
-    </div>
-  	<div class="col-md-3">
-  		
-  	</div>
-  </div>
+  <h1 class="text-projects">LET'S TALK</h1>
+  <p class="text-projects">Send me an email and we can get in touch!</p>
+  
 </div>
-<div class="row padding-jumbo">
+<div class="row padding-jumbo padding-contact">
 <div class="col-xs-1 col-md-2"></div>
 <div class="col-xs-10 col-md-8">
 
-<form role="form" novalidate class="simple-form">
+<div class="alert alert-dismissible alert-danger" id = "missingBlank">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>Please fill in all the fields and submit again.</strong>
+</div>
+
+<div class="alert alert-dismissible alert-success" id = "good">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>An email has been sent!</strong>
+</div>
+
   <div class="form-group">
   <label class="control-label" for="inputDefault">Name</label>
-  <input type="text" class="form-control" id="inputDefault" ng-model="user.name" required >
+  <input type="text" class="form-control" id="name" ng-model="user.name" required >
 </div>
 
 <div class="form-group has-success">
   <label class="control-label" for="inputSuccess">Email</label>
-  <input type="text" class="form-control" id="inputSuccess" ng-model="user.email" required >
+  <input type="text" class="form-control" id="email" ng-model="user.email" required >
 </div>
 
 <div class="form-group has-warning">
   <label class="control-label" for="inputWarning">Subject</label>
-  <input type="text" class="form-control" id="inputWarning" required>
+  <input type="text" class="form-control" id="subject" required>
 </div>
     <div class="form-group">
   <label class="control-label" for="focusedInput">Message</label>
-  <input class="form-control" id="focusedInput" type="text" value="Enter your message here :)" ng-model="user.message" required >
+  <input class="form-control" id="message" type="text" value="Enter your message here :)" ng-model="user.message" required >
 </div>
 
-<div class="form-group">
-      <div class="pull-center center-block">
-        <a type="submit" class="btn btn-primary btn-lg">Send Email</a>
+      <div class="pull-center center-block" id ="contactButton">
+        <a class="btn btn-primary btn-lg">Send Email</a>
       </div>
-    </div>
 
-</form>
 </div>
 <div class="col-xs-1 col-md-2"></div>
 </div>
 </div>
+
+<script>
+$('#missingBlank').hide();
+$('#good').hide();
+  $("#contactButton").click(function(){
+        
+
+if ($('#email').val() && $('#name').val() && $('#subject').val() && $('#message').val() ) {
+    $('#missingBlank').hide();
+    $('#good').show();
+    amessage = $('#email').val() + "<br/>" + $('#name').val() + "<br> message <br>" + $('#message').val() + "<br>" + $('#subject').val();
+
+     $.ajax({
+
+    type:"post",
+    url:"../php/contact.php",
+    dataType:'json',
+    data:({name: amessage}),
+    cache:false,
+    success: function(){
+
+      console.log("HELLO");
+    }
+  })
+}else{
+    $('#good').hide();
+  $('#missingBlank').show();
+}
+    });
+
+
+</script>

@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>Akila Jayawardane</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "description" content="">
@@ -16,7 +18,7 @@
 
 <body>
 
-    <div ng-app="app">
+    <div ng-app="app" ng-controller="scroll">
     		<div ng-controller="mainController">
   
       <div id="wrapper">
@@ -25,56 +27,51 @@
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
+            <div class="nav-logo">
                 <li class="sidebar-brand">
                     <a href="#">
-                       Brand
+                       <img width = "35%" height = "auto" src="img/logo-temp.png">
                     </a>
                 </li>
+             </div>   
                 <li class="nav-link">
-                    <a href="#"><i class="fa fa-home icon-padding"></i>  Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#"><i class="fa fa-user icon-padding"></i> About</a>
+                    <a ng-click="home()"><i class="fa fa-home icon-padding"></i>  Home</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#"><i class="fa fa-tasks icon-padding"></i>Projects</a>
+                    <a ng-click="about()"><i class="fa fa-user icon-padding"></i> About</a>
                 </li>
                 <li class="nav-link">
-                    <a href="#"><i class="fa fa-file-text icon-padding"></i>Resume</a>
+                    <a ng-click="projects()"><i class="fa fa-tasks icon-padding"></i>Projects</a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Dropdown heading</li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+                <li class="nav-link">
+                    <a ng-click="resume()"><i class="fa fa-file-text icon-padding"></i>Resume</a>
                 </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/maridlcrmn">Follow me</a>
+                <li class="nav-link">
+                    <a ng-click="contact()"><i class="fa fa-envelope icon-padding"></i> Let's Talk</a>
                 </li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
-
+        <section id="home">
         <!-- Page Content -->
         <div ng-include src= "'templates/image.html'"></div>
-        <div ng-include src= "'templates/about.html'"></div>
+        </section>
+        <section id="about">
+            <div id = "about" ng-include src= "'templates/about.html'"></div>
+            </section>
+         <section id="projects"> 
         <div ng-include src= "'templates/projects.html'"></div>
+        </section>
         <div ng-include src= "'templates/parallax.html'"></div>
+        <section id="resume">
         <div ng-include src= "'templates/resume.html'"></div>
+        </section>
+        <section id="contact">
         <div ng-include src= "'templates/contact.html'"></div>
+        </section>
+        <div ng-include src= "'templates/footer.html'"></div>
         <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas" id = "page-hamburger">
                 <span class="hamb-top"></span>
           <span class="hamb-middle"></span>
         <span class="hamb-bottom"></span>
@@ -114,5 +111,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script type="text/javascript" src="js/animation.gsap.js"></script>
 <script type="text/javascript" src="js/typed.js"></script>
-
+<script src="js/ng-scrollbar.min.js"></script>
+<script src="js/angular-scroll.min.js"></script>
 </html>

@@ -1,0 +1,14 @@
+.footer{
+	padding-top: 2%;
+	padding-bottom: 6%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: #303030;
+
+}
+
+.footerText{
+	color: white;
+	font-size: 16px;
+	text-align: right;
+}

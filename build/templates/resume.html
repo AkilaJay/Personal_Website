@@ -1,60 +1,166 @@
+<div ng-controller="resume">
 <div class="resume">
-	<div class="jumbotron padding-jumbo">
-  <h1 class="text-projects">RESUME</h1>
-  <p class="text-projects">This is the text that will go in the explore section.</p>
-  <div class="row padding-jumbo">
-  	<div class="col-md-3">
-  		
-  	</div>
-  	<div class="col-md-3">
-  		<p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Projects</a></p>
-  	</div>
-    <div class="col-md-3">
-      <p><a class="btn btn-primary btn-lg center-block"><i class="fa fa-github"></i>Full Resume</a></p>
+    <div class="jumbotron padding-jumbo">
+        <h1 class="text-projects">RESUME</h1>
+        <p class="text-projects">Explore my resume below!</p>
+        <div class="row padding-jumbo">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+                <p><a class="btn btn-primary btn-lg center-block" id = "projectsResume" ><i class="fa fa-cog"></i> Projects</a></p>
+            </div>
+            <div class="col-md-3">
+                <p><a class="btn btn-primary btn-lg center-block" href="/pdf/resume.pdf" target="_blank"><i class="fa fa-sticky-note"></i> Full Resume</a></p>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+
     </div>
-  	<div class="col-md-3">
-  		
-  	</div>
-  </div>
+    <div class="resume-padding">
+        <div class="row padding-panel">
+            <div class="col-md-1 col-lg-2"></div>
+            <div class="col-md-4 col-lg-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h3 class="list-group-item-heading">Languages</h3>
+                        <hr/>
+                        <h5> C# </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 85%;"></div>
+                        </div>
+                        <h5> JavaScript </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 85%;"></div>
+                        </div>
+                        <h5> PHP </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 80%"></div>
+                        </div>
+                        <h5> C++ </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" style="width: 65%"></div>
+                        </div>
+                        <h5> SQL </h5>
+                        <div class="progress">
+                            <div class="progress-bar  progress-bar-warning" style="width: 60%"></div>
+                        </div>
+                        <h5> Java </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+                        </div>
+                        <h5> NoSQL </h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
 
-</div>
-<div class="resume-padding">
-<div class="row padding-panel">
-<div class="col-md-1 col-lg-2"></div>
-   <div class="col-md-4 col-lg-3">
-   <div class="list-group">
-  <a href="#" class="list-group-item">
-    <h3 class="list-group-item-heading">Languages</h3><hr/>
-    <h5> Job One </h5>
-    <div class="progress progress-striped active">
-  <div class="progress-bar" style="width: 45%"></div>
-</div>
- <h5> Job One </h5>
-    <div class="progress progress-striped active">
-  <div class="progress-bar" style="width: 45%"></div>
-</div>
+
+                        <!-- <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> -->
+                    </a>
+                    <br/>
+                    <a href="#" class="list-group-item">
+                        <h3 class="list-group-item-heading">Platforms</h3>
+                        <hr/>
+                        <h5> LAMP Stack </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 85%;"></div>
+                        </div>
+                        <h5> Android </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 80%"></div>
+                        </div>
+                        <h5> AngularJS </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 80%"></div>
+                        </div>
+                        <h5> Git </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 80%"></div>
+                        </div>
+                        <h5> Ionic </h5>
+                        <div class="progress">
+                            <div class="progress-bar  progress-bar-warning" style="width: 70%"></div>
+                        </div>
+                        <h5> Meteor </h5>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" style="width: 70%"></div>
+                        </div>
+                        <h5> Redis </h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                        <h5> MongoDB </h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
 
 
-    <!-- <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p> -->
-  </a>
-  <a href="#" class="list-group-item">
-    <h3 class="list-group-item-heading">Platforms</h3><hr/>
-    <h4> Job One </h4>
-    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </a>
-</div>
 
-   </div>
-  <div class="col-md-6 col-lg-5">
-    <div class="list-group">
-  <a href="#" class="list-group-item">
-    <h3 class="list-group-item-heading">Work Experience</h3><hr/>
-    <h4> Job One </h4>
-    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </a>
-</div>
-  </div>
-  <div class="col-md-1 col-lg-2"></div>
-</div>
+
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h3 class="list-group-item-heading">Work Experience</h3>
+                        <hr/>
+                        <div class="paddingLeftRight">
+                        <h4>Full Stack Developer</h4>
+                        <h6>GatewayiQ</h6>
+                        <h6> <i class="fa fa-calendar"></i> September 2015 - December 2015 </h6>
+                        <p class="list-group-item-text">
+                            <ul>
+                                <li>Designed and improved educational training software using MVC, Slim framework, PHP, JavaScript, SQL & etc. </li>
+                                <li>Developed a content purchasing module to allow companies to purchase default items</li>
+                                <li>Created scripts to transfer user data from one site to another</li>
+                                <li>Improved and added features to allow lists of content to be displayed in various ways </li>
+                            </ul>
+                        </p><br><hr>
+
+                        <h4>Junior Developer</h4>
+                        <h6>Marketing and Strategic Communications, University of Waterloo</h6>
+                        <h6> <i class="fa fa-calendar"></i> January 2015 - May 2015 </h6>
+                        <p class="list-group-item-text">
+                            <ul>
+                                <li>Created fully responsive HTML emails compatible across all platforms</li>
+                                <li>Developed a Meteor application to send HTML emails</li>
+                                <li>Created a canvas based social media game using JavaScript, PHP, Facebook and Twitter API for the University of
+                                Waterloo’s CanBuild fundraiser</li>
+                                <li>Gained experience with content management systems and web accessibility by creating content on the University of
+                                Waterloo’s CMS (Drupal)</li>
+                                <li>Communicated frequently between several teams to complete tasks quickly and efficiently under pressure</li>
+                            </ul>
+                        </p><br><hr>
+                        <h4>Internship - Law Firm</h4>
+                        <h6>McInnes Cooper, Fredericton, NB</h6>
+                        <h6> <i class="fa fa-calendar"></i> July 2013 - August 2013 </h6>
+                        <p class="list-group-item-text">
+                            <ul>
+                                <li>Researched ways in which the company could become more environmentally friendly and presented this information at
+                                a board meeting </li>
+                                <li>Enhanced organizational skills through creating Excel databases based on client information</li>
+                                <li>Developed communication skills through contacting several organizations regarding the donation of company cellular
+                                devices</li>
+                            </ul>
+                        </p><br><hr>
+                         <h4>Freelance Graphic Designer</h4>
+                        <h6>Fredericton, NB</h6>
+                        <h6> <i class="fa fa-calendar"></i> March 2013 - Present</h6>
+                        <p class="list-group-item-text">
+                            <ul>
+                                <li>Worked with various local companies to create logos and designs (e.g. Thatt Electrical Company logo)</li>
+                                <li>Gained experience in web development by creating and contributing to projects</li>
+                            </ul>
+                        </p><br></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-1 col-lg-2"></div>
+        </div>
+    </div>
 </div>
 </div>
